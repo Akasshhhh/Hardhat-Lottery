@@ -7,13 +7,12 @@ require("hardhat-contract-sizer")
 require("dotenv").config()
 
 const COINMARKETCAP_API_KEY =
-    process.env.COINMARKETCAP_API_KEY || "8d9d22b4-a546-43d9-83d0-2eb7e5bea9f6"
+    process.env.COINMARKETCAP_API_KEY
 const GOERLI_RPC_URL =
-    process.env.GOERLI_RPC_URL ||
-    "https://eth-goerli.g.alchemy.com/v2/ia34n8RQpW8qXvAda8zZEym8UsI-LTg7"
+    process.env.GOERLI_RPC_URL
 const PRIVATE_KEY =
-    process.env.PRIVATE_KEY || "a434d0a2847f88767fcf6401c447ee4b22ff7a69203d7d9fcb979eeaaa363d20"
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "KS4W59JCNVS8SGXJRVF5DJFC89MTWS4VAN"
+    process.env.PRIVATE_KEY 
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY 
 
 module.exports = {
     defaultNetwork: "hardhat",
